@@ -1,77 +1,135 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <title>Members</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Members — Hobby Project</title>
+  <link rel="stylesheet" href="assets/style.css">
 </head>
-
 <body>
-
-<div class="members-page">
-
-    <!-- LEFT SIDE : Benefits of hobbies -->
-    <div class="hobby-info-box">
-        <h1>Why Hobbies Make Life Better</h1>
-
-        <p>Hobbies reduce stress and help refresh the mind.</p>
-        <p>They improve creativity, patience, and confidence.</p>
-        <p>Hobbies make free time more meaningful and productive.</p>
-        <p>They help in personal growth and building new skills.</p>
-        <p>Hobbies also support better mental and emotional balance.</p>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html">Hobby Project</a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="intro.html">About</a>
+      </nav>
     </div>
+  </header>
 
+  <main class="container members-layout">
+    <!-- Left column (30%) -->
+    <aside class="sidebar">
+      <h2 class="section-title">Members</h2>
 
-    <!-- RIGHT SIDE : Members list -->
-    <div class="members-container">
+      <!-- WHY HOBBIES MAKE LIFE BETTER -->
+      <h3 class="section-title">Why Hobbies Make Life Better</h3>
+      <p>
+        Hobbies do more than fill free time — they shape the way we think, learn, and connect with others.
+        Creative habits build patience, improve focus, and give us a safe space to practice new skills without pressure.
+      </p>
+      <p>
+        Every member in this project uses their hobby to grow in unique ways. Some build games, some edit videos,
+        and some test gameplay mechanics. These activities help develop confidence, creativity, and problem-solving.
+      </p>
+      <p>
+        Click any member below to explore their introduction, detailed hobby explanation, gallery of work,
+        and ways to contact them.
+      </p>
 
-        <!-- MEMBER 1 -->
-        <div class="member-card">
-            <img src="member1.jpg" class="member-photo" alt="Member 1 Photo">
+      <!-- MEMBERS LIST -->
+      <div class="members-list" id="membersList">
 
-            <div>
-                <p class="hobby-tag">Hobby: Painting</p>
-                <h2>Member 1</h2>
-                <p>Roll No: 01</p>
+        <!-- Member 1: Praveen Kumar -->
+        <button class="member-card" 
+          data-name="Praveen Kumar"
+          data-roll="202610101360204"
+          data-hobby="Game development"
+          data-desc="Praveen builds small indie games and prototypes, focusing on gameplay and level design.">
+
+          <div class="card-row">
+            <img src="assets/member1.jpg" alt="Praveen Kumar" class="thumb">
+            <div class="card-text">
+              <strong class="card-name">Praveen Kumar</strong>
+              <div class="card-meta">Hobby: <span class="hobby">Game development</span></div>
             </div>
+          </div>
+        </button>
 
-            <a href="member1.html" class="view-btn">View More</a>
+        <!-- Member 2: Pooja -->
+        <button class="member-card"
+          data-name="Pooja"
+          data-roll="202610101360182"
+          data-hobby="Video editing"
+          data-desc="Pooja creates short-form videos and edits footage into polished reels, learning color grading and pacing.">
+
+          <div class="card-row">
+            <img src="assets/member2.jpg" alt="Pooja" class="thumb">
+            <div class="card-text">
+              <strong class="card-name">Pooja</strong>
+              <div class="card-meta">Hobby: <span class="hobby">Video editing</span></div>
+            </div>
+          </div>
+        </button>
+
+        <!-- Member 3: Aditya Sidhant -->
+        <button class="member-card"
+          data-name="Aditya Sidhant"
+          data-roll="202610101360183"
+          data-hobby="Game testing"
+          data-desc="Aditya focuses on playtesting, bug reports, and balancing — helping improve player experience.">
+
+          <div class="card-row">
+            <img src="assets/member3.jpg" alt="Aditya Sidhant" class="thumb">
+            <div class="card-text">
+              <strong class="card-name">Aditya Sidhant</strong>
+              <div class="card-meta">Hobby: <span class="hobby">Game testing</span></div>
+            </div>
+          </div>
+        </button>
+
+      </div> <!-- end .members-list -->
+    </aside>
+
+    <!-- Right column (70%) -->
+    <section class="details" id="memberDetails">
+      <div class="detail-card" id="detailCard">
+        
+        <img id="detailAvatar" src="assets/member1.jpg" alt="Praveen Kumar" class="detail-avatar">
+
+        <h3 id="detailName">Praveen Kumar</h3>
+        <p id="detailMeta">
+          Hobby: <span id="detailHobby">Game development</span> • 
+          Roll No: <span id="detailRoll">202610101360204</span>
+        </p>
+
+        <div id="detailDesc">
+          <p>Praveen builds small indie games and prototypes, focusing on gameplay and level design.</p>
         </div>
 
-
-        <!-- MEMBER 2 -->
-        <div class="member-card">
-            <img src="member2.jpg" class="member-photo" alt="Member 2 Photo">
-
-            <div>
-                <p class="hobby-tag">Hobby: Photography</p>
-                <h2>Member 2</h2>
-                <p>Roll No: 02</p>
-            </div>
-
-            <a href="member2.html" class="view-btn">View More</a>
+        <div class="contact-icons" id="detailContacts">
+          <a href="mailto:praveen@example.com" class="icon-btn" title="Email">
+            <img src="assets/icon-email.png" alt="Email">
+          </a>
+          <a href="https://www.instagram.com/praveen_profile" class="icon-btn" title="Instagram" target="_blank">
+            <img src="assets/icon-instagram.png" alt="Instagram">
+          </a>
+          <a href="https://www.linkedin.com/in/praveen" class="icon-btn" title="LinkedIn" target="_blank">
+            <img src="assets/icon-linkedin.png" alt="LinkedIn">
+          </a>
         </div>
 
+      </div>
+    </section>
 
-        <!-- MEMBER 3 -->
-        <div class="member-card">
-            <img src="member3.jpg" class="member-photo" alt="Member 3 Photo">
+  </main>
 
-            <div>
-                <p class="hobby-tag">Hobby: Football</p>
-                <h2>Member 3</h2>
-                <p>Roll No: 03</p>
-            </div>
-
-            <a href="member3.html" class="view-btn">View More</a>
-        </div>
-
-
-        <!-- EXIT WEBSITE BUTTON -->
-        <a href="thankyou.html" class="exit-btn">Exit Website</a>
-
+  <footer class="site-footer">
+    <div class="container">
+      <p>© Hobby Project</p>
     </div>
+  </footer>
 
-</div>
-
+  <script src="assets/site.js"></script>
 </body>
 </html>
